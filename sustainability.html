@@ -17,23 +17,20 @@
     <body>
             <!--Menu bar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="/project/index.html"><h1 class='logo'>Bite</h1></a>
+            <a class="navbar-brand" href="/CreativeProject/index.html"><h1 class='logo'>Bite</h1></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" href="/project/shop.html">Shop</a>
+                      <a class="nav-link" href="/CreativeProject/shop.html">Shop</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/project/sustainability.html">Sustainability</a>
+                      <a class="nav-link" href="/CreativeProject/sustainability.html">Sustainability</a>
                     </li>
                      <li class="nav-item">
-                      <a class="nav-link" href="">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/project/cart.html">Cart</a>
+                      <a class="nav-link" href="/CreativeProject/about.html">About</a>
                     </li>
                 </ul>
             </div>    
@@ -49,7 +46,7 @@
                 </div>
             </div>
             <div class='wrapper-shop-now'>
-                <button class = 'shop-now'>Shop Now </button>
+                <button class = 'shop-now'><a href='/CreativeProject/shop.html'>Shop Now </a></button>
             </div> 
             <div class='plastic-free'>
                 <h1>We’re different and<br>
@@ -71,10 +68,34 @@
                     <p>nstead of plastic poly-mailers, we ship with kraft envelopes padded with post-consumer recycled newspapers.</p>
                 </div>
                 <div class='img-wrapper right'>
-                    <img class='img-packaging' src='img/bag.jpg'>
+                    <img class='img-packaging' src='img/bag.jpg'/>
                 </div>
-            </div>    
+                <div class='fetch'>
+                    
+                    <img id="img" src="" >
+                </div>
+               
+            </div>   
         </div> 
+         <script>
+            const myurl = "https://api.giphy.com/v1/stickers/random?api_key=FBpYWZIgH3TZb9VYhT4pftoXNsWulilj&tag=no+plastic&rating=g";
+            //console.log(myurl);
+  
+              fetch(myurl)
+                .then(function(response) {
+                  return response.json();
+                }).then(function(json) {
+                  console.log(json);
+                 let addr = json.data.images.original.url
+                const image = document.getElementById("img");
+                
+              //  console.log(addr);
+                  
+                image.src = addr;
+                  
+                });
+            
+        </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

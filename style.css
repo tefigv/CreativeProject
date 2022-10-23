@@ -4,10 +4,19 @@
 }
 
 .logo{
-    font-size: 70px;
+    font-size: 80px;
     font-family: 'Playfair Display', serif;
     font-weight: bolder; 
 }
+
+.navbar-light, .bg-light{
+    background-color: transparent !important;
+}
+
+.navbar a{
+    font-size: 40px;
+}
+
 
 .content{
     font-family: 'Inter Tight', sans-serif;
@@ -72,7 +81,12 @@
 }
 
 @media only screen and (min-width: 1000px) {
-    
+    .logo{
+     font-size: 40px;
+    }
+    .navbar a{
+        font-size: 20px;
+    }
     
     .wrapper{
     width: 1000px;
