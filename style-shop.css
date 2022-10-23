@@ -8,8 +8,11 @@ p{
     font-size: 50px;
 }
 
+.first{
+  background-color: #bde0ff !important;   
+}
+
 .banner{
-    background-color: #bde0ff;
     text-align: center;
     height: 160px;
     

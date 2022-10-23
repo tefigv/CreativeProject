@@ -17,6 +17,9 @@
     font-size: 40px;
 }
 
+.first{
+    background-color: #8499da;
+}
 
 .content{
     font-family: 'Inter Tight', sans-serif;
@@ -28,6 +31,7 @@
 }
 
 .img-banner{
+     width: 100%;
     display: none;
 }
 
