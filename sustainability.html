@@ -68,16 +68,36 @@
                     <p>nstead of plastic poly-mailers, we ship with kraft envelopes padded with post-consumer recycled newspapers.</p>
                 </div>
                 <div class='img-wrapper right'>
-                    <img class='img-packaging' src='img/bag.jpg'>
+                    <img class='img-packaging' src='img/bag.jpg'/>
                 </div>
-                Ivan Arriola Lugo
+                
                 <div class='fetch'>
                     
+                    <img id="img" src="" >
                 </div>
-            </div>    
-            
+               
+            </div>   
         </div> 
-        <script src='/script.js'></script>
+         <script>
+            const myurl = "https://api.giphy.com/v1/stickers/random?api_key=FBpYWZIgH3TZb9VYhT4pftoXNsWulilj&tag=no+plastic&rating=g";
+            //console.log(myurl);
+  
+              fetch(myurl)
+                .then(function(response) {
+                  return response.json();
+                }).then(function(json) {
+                  console.log(json);
+                 let addr = json.data.images.original.url
+                const image = document.getElementById("img");
+                
+              //  console.log(addr);
+                  
+                image.src = addr;
+                  
+                });
+            
+        </script>
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
