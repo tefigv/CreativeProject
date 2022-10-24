@@ -36,7 +36,6 @@
             </div>    
         </nav> 
     <!--End of menu bar--> 
-        <div class='content'>
             <div class='header'>
                 <img class='img-header' src='img/plastic.jpeg' style="width:100%;"> 
                 <div class='center'>
@@ -45,6 +44,7 @@
                     reduce plastic waste. Here’s how and why we do it—every little bit counts.</p>
                 </div>
             </div>
+                   
             <div class='wrapper-shop-now'>
                 <button class = 'shop-now'><a href='/CreativeProject/shop.html'>Shop Now </a></button>
             </div> 
@@ -52,48 +52,46 @@
                 <h1>We’re different and<br>
                 it makes a difference.</h1>
                 <p>Here’s how we happily avoid plastic</p>
-            </div>  
-            <div class='bottle-wrapper'>
-                <div class='packaging right'>
-                    <h2>Bottles</h2>
-                    <p>We only ever use glass bottles. Why? Unlike plastic, glass is infinitely recyclable, looks great, and breaks down into sand at the end of its life.</p>
-                </div>
-                <div class='img-wrapper left'>
-                    <img class='img-packaging' src='img/bottle.jpg'>
-                </div>
             </div> 
-            <div class='envelopes-wrapper'>
-                <div class='packaging left'>
-                    <h2>Envelopes</h2>
-                    <p>nstead of plastic poly-mailers, we ship with kraft envelopes padded with post-consumer recycled newspapers.</p>
-                </div>
-                <div class='img-wrapper right'>
-                    <img class='img-packaging' src='img/bag.jpg'/>
-                </div>
-                
-                <div class='fetch'>
+            <div class='content'> 
+                <div class='bottle-wrapper'>
+                    <div class='packaging right'>
+                        <h2>Bottles</h2>
+                        <p>We only ever use glass bottles. Why? Unlike plastic, glass is infinitely recyclable, looks great, and breaks down into sand at the end of its life.</p>
+                    </div>
+                    <div class='img-wrapper left'>
+                        <img class='img-packaging' src='img/bottle.jpg'>
+                    </div>
+                </div> 
+                <div class='envelopes-wrapper'>
+                    <div class='packaging left'>
+                        <h2>Envelopes</h2>
+                        <p>nstead of plastic poly-mailers, we ship with kraft envelopes padded with post-consumer recycled newspapers.</p>
+                    </div>
+                    <div class='img-wrapper right'>
+                        <img class='img-packaging' src='img/bag.jpg'/>
+                    </div>
+                   
+                </div>   
+            </div> 
+             <div class='api'>
                     
                     <img id="img" src="" >
                 </div>
-               
-            </div>   
-        </div> 
+        
+        
          <script>
-            const myurl = "https://api.giphy.com/v1/stickers/random?api_key=FBpYWZIgH3TZb9VYhT4pftoXNsWulilj&tag=no+plastic&rating=g";
+            const myurl = "https://api.giphy.com/v1/stickers/random?api_key=FBpYWZIgH3TZb9VYhT4pftoXNsWulilj&tag=plastic+free&rating=g";
             //console.log(myurl);
   
               fetch(myurl)
                 .then(function(response) {
                   return response.json();
                 }).then(function(json) {
-                  console.log(json);
-                 let addr = json.data.images.original.url
-                const image = document.getElementById("img");
-                
-              //  console.log(addr);
-                  
-                image.src = addr;
-                  
+                    console.log(json);
+                    let addr = json.data.images.original.url
+                    const image = document.getElementById("img");
+                    image.src = addr;
                 });
             
         </script>

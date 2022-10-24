@@ -59,10 +59,10 @@ p{
     width: 100%;
 }
 
-.fetch{
+.api{
     text-align: center;
     width:100%;
-    background-color: red;
+    background-color: #DEFCFF;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -73,7 +73,7 @@ p{
     .header{
       position: relative;
       text-align: center;
-      color: #838383;
+      color: black;
     }
     .center {
       position: absolute;
@@ -94,15 +94,14 @@ p{
     }
     
     .bottle-wrapper{
-        padding: 70px;
-        height: 700px;
+        padding: 20px;
+        height: 500px;
         
     }
     
-       .envelopes-wrapper{
-        padding: 70px;
-        height: 700px;
-       
+    .envelopes-wrapper{
+        padding: 0px;
+        height: 500px;
     }
     
     .left{
@@ -114,12 +113,17 @@ p{
     float: right;
     }
     
+    .packaging{
+        margin-top: 120px;
+    }
+    
     .packaging h2{
     font-size: 50px; 
     }
     
     .img-wrapper {
-        width: 400px;
+        width: 450px;
+        margin: 10px;
     }
  
 }

@@ -18,7 +18,8 @@
 }
 
 .first{
-    background-color: #8499da;
+    /*background-color: #8499da;*/
+    height: 100%;
 }
 
 .content{
@@ -92,28 +93,33 @@
         font-size: 20px;
     }
     
-    .wrapper{
-    width: 1000px;
+    .content{
+        width: 1000px;
+        margin-left:4%;
+        margin-right: 10%;
 
     }
     
     .opener{
-    width: 50%;
-    float: left;
+        margin-top:20px;
+        width: 50%;
+        float: left;
     }
     
     .opener h2{
-    padding:20px 0px 0px 30px;
+        padding:20px 0px 0px 20px;
+        font-size: 50px;
     }
     
     .opener p{
-    padding: 20px 0px 0px 30px;
+        padding: 10px 0px 0px 20px;
+        font-size:25px;
     }
 
     .img-product{
-    padding-top: 0px;
-    width: 50%;
-    float: rigtht;
+        padding-top: 0px;
+        width: 50%;
+        float: right;
     }
     
 }
